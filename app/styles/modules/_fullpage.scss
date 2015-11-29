@@ -1,0 +1,40 @@
+// *************************************
+//
+//   fullpage
+//   -> Fullscreen page for home page
+//
+// *************************************
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.fullpage {
+
+    // -------------------------------------
+    //   Base
+    // -------------------------------------
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 100vh;
+    padding-top: 140px; 
+
+
+    // -------------------------------------
+    //   Elements
+    // -------------------------------------
+
+
+    // ----- Element description ----- // 
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-grow: 1;
+    }
+
+}

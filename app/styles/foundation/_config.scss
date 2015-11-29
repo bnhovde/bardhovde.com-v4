@@ -1,0 +1,39 @@
+// *************************************
+//
+//   Global Settings
+//   -> Fonts, Typography, Breakpoints
+//
+// *************************************
+
+// -------------------------------------
+//   Colors
+// -------------------------------------
+
+// ----- Base Colors ----- //
+
+$g-sitecol-red: #D01D3A;
+$g-sitecol-gray: #6D6D6D;
+$g-color-text: #101010;
+$g-color-link: #101010;
+// ...
+
+
+// ----- Sizes ----- //
+
+$g-text-width: 958px;
+// ...
+
+// -------------------------------------
+//   Breakpoints
+// -------------------------------------
+
+$global-breakpoints: (
+    'infant' '(min-width: 20em)',
+    'baby' '(min-width: 30em)',
+    'child' '(min-width: 37.5em)',
+    'teen' '(min-width: 48em)',
+    'adult' '(min-width: 64em)',
+    'mama' '(min-width: 68.75em)',
+    'papa' '(min-width: 81.25em)',
+    'elder' '(min-width: 120em)'
+);

@@ -1,0 +1,32 @@
+// *************************************
+//
+//   footer
+//   -> Footer module
+//
+// *************************************
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.footer {
+
+    // -------------------------------------
+    //   Variables
+    // -------------------------------------
+
+    // Only show page after fonts have loaded
+    visibility: visible; 
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 1s cubic-bezier(0, 0, 0.24, 0.85);
+    transition-delay: .3s;
+    
+    .wf-loading & {
+        visibility: hidden; 
+        opacity: 0;
+        transform: translate3d(0, 40px, 0);
+    }
+
+
+}

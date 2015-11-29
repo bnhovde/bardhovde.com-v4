@@ -1,0 +1,77 @@
+// *************************************
+//
+//   header
+//   -> Header section
+//
+// *************************************
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.header {
+
+    // -------------------------------------
+    //   Variables & Base
+    // -------------------------------------
+    
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    text-transform: uppercase;
+    z-index: 1;
+        
+    // Only show page after fonts have loaded
+    visibility: visible; 
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 1s cubic-bezier(0, 0, 0.24, 0.85);
+    transition-delay: .1s;
+    
+    .wf-loading & {
+        visibility: hidden; 
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+    }
+    
+    // -------------------------------------
+    //   Elements
+    // -------------------------------------
+
+
+    // ----- Element description ----- // 
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        height: 140px;
+    }
+
+
+    // ----- Element description ----- // 
+
+    &__title {
+        margin: 0;
+        border: 0;
+    }
+
+    // ----- Element description ----- // 
+
+    &__action {
+        letter-spacing: 2px;
+    }
+
+
+    // -------------------------------------
+    //   Variations
+    // -------------------------------------
+
+
+    // ----- Variation description ----- // 
+
+    &--variation {}
+
+}

@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="wf-loading" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Hi There</title>
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+  </head>
+  <body>
+
+    <header class="header">
+        <div class="header__inner container">
+            <a href="/" class="header__title h4">Bård N. Hovde</a>
+            <a href="/contact" class="header__action">Contact</a>
+        </div>
+    </header>
+    
+    <main>
+        
+        <section class="fullpage">
+            <div class="fullpage__body container">
+                <img src="/images/face.svg" alt="face">
+            </div>
+            
+            <div class="fullpage__footer container">
+                <h1 class="t--first">Hello.</h1>
+                <p>I’m Bård. I’m a Front-End Developer living in Southampton, UK. <a href="#page-2">Scroll down</a> to see what I’ve been up to..</p>
+            </div>
+        </section>
+        
+        <hr class="hr" />
+
+        <section id="page-2" class="container">
+
+            <p>I'm currently working at <a href="#">@cddnation</a> with a great, varied team of highly skilled people.</p>
+            
+            <ul class="listing" id="things">
+                <li class="listing__intro">I enjoy </li>
+                <li class="listing__item">building awesome things on the web.</li>
+                <li class="listing__item">building stuff things on the web.</li>
+                <li class="listing__item">Beer.</li>
+                <li class="listing__item">Self loathing</li>
+            </ul>
+
+            <p>I'm passionate about pushing the web forwards and making it safe, free and accessible for everyone.</p>
+            <p>Since you’re here, why not checkout the pages below?</p>
+        </section>
+
+    </main>
+    
+    <footer class="footer container">
+        <nav class="nav container">
+            <a class="nav__item" href="#">Selected work</a>
+            <a class="nav__item" href="#">Read my articles</a>
+            <a class="nav__item" href="#">More about me</a>
+            <a class="nav__item" href="#">CV</a>
+        </nav>
+    </footer>
+
+    <!--[if lt IE 9]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Google Analytics -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/compiled/modules/animationCtrl.js"></script>
+    <script src="scripts/compiled/main.js"></script>
+    <!-- endbuild -->
+    
+    <!-- Typekit -->
+    <script>
+        
+        // Global namespace
+        var ns = ns || {};
+        
+        WebFontConfig = {
+            google: { families: [ 'Raleway:300,600,200,100:latin' ] }
+        };
+        
+        (function(d) {
+            var wf = d.createElement('script'), s = d.scripts[0];
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+            s.parentNode.insertBefore(wf, s);
+        })(document);
+    </script>
+</body>
+</html>

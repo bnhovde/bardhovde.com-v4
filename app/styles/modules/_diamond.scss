@@ -1,0 +1,53 @@
+// *************************************
+//
+//   diamond
+//   -> Diamond shape
+//
+// *************************************
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.diamond {
+
+    // -------------------------------------
+    //   Base
+    // -------------------------------------
+
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    transform: rotate(45deg);
+
+    // -------------------------------------
+    //   Elements
+    // -------------------------------------
+
+
+    // ----- Element description ----- // 
+
+    &__inner {
+        @include font-family("header");
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        font-size: 2rem;
+        line-height: 58px;
+        color: $g-sitecol-red;
+        transform: rotate(-45deg);
+    }
+
+
+    // -------------------------------------
+    //   Variations
+    // -------------------------------------
+
+
+    // ----- Variation description ----- // 
+
+    &--variation {}
+
+}

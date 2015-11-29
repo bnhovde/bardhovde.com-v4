@@ -1,0 +1,147 @@
+// *************************************
+//
+//   Base-level tags
+//   -> All font related styling -
+//   -> generated with gridlover.net
+//
+// *************************************
+
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+
+*, *:after, *:before {
+    box-sizing: border-box;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    outline: none;
+}
+
+html {
+
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.875rem;
+    line-height: 2.8125rem;
+    margin: 0;
+    padding: 0;
+    color: $g-color-text;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sanitation */
+hr {
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid;
+    margin: -1px 0;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+b, strong, em, small, code {
+    line-height: 1;
+}
+
+sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+
+sub {
+    top: 0.4em;
+}
+
+a {
+    color: $g-color-link;
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $g-color-link;
+}
+
+
+// -------------------------------------
+//   Inline Content
+// -------------------------------------
+
+h1, .h1, h2, .h2 {
+    @include font-family("headline");
+    letter-spacing: 2px;
+}
+
+h3, .h3, h4, .h4 {
+    @include font-family("headline");
+    letter-spacing: 1px;
+}
+
+h1,
+.h1 {
+    font-family: inherit;
+    font-weight: 600;
+    font-style: inherit;
+    font-size: 3.1875rem;
+    line-height: 5.625rem;
+    margin-top: 2.8125rem;
+    margin-bottom: 0rem;
+}
+h2,
+.h2 {
+    font-family: inherit;
+    font-weight: 600;
+    font-style: inherit;
+    font-size: 2.6875rem;
+    line-height: 2.8125rem;
+    margin-top: 2.8125rem;
+    margin-bottom: 2.8125rem;
+}
+h3,
+.h3 {
+    font-family: inherit;
+    font-weight: 600;
+    font-style: inherit;
+    font-size: 2.25rem;
+    line-height: 2.8125rem;
+    margin-top: 2.8125rem;
+    margin-bottom: 0rem;
+}
+h4,
+.h4 {
+    font-family: inherit;
+    font-weight: 600;
+    font-style: inherit;
+    font-size: 1.955rem;
+    line-height: 2.9125rem;
+    margin-top: 2.8125rem;
+    margin-bottom: 0rem;
+}
+h5,
+.h5 {
+    font-family: inherit;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.875rem;
+    line-height: 2.8125rem;
+    margin-top: 2.8125rem;
+    margin-bottom: 0rem;
+}
+p, ul, ol, pre, table, blockquote {
+    margin-top: 0rem;
+    margin-bottom: 2.8125rem;
+    letter-spacing: 0.5px;
+}
+ul ul, ol ol, ul ol, ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}

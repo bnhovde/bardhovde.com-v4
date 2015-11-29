@@ -1,0 +1,63 @@
+// *************************************
+//
+//   SCSS Imports for cringemas
+//
+// *************************************
+
+@import 
+
+// -------------------------------------
+//   CORE - Should not be modified
+// -------------------------------------
+
+'core/_helpers',
+'core/_normalise',
+'core/_grid',
+'core/_print',
+
+// -------------------------------------
+//   MIXINS
+// -------------------------------------
+
+'mixins/_utilities',
+'mixins/_typography',
+'mixins/_breakpoints',
+
+// -------------------------------------
+//   FOUNDATION
+// -------------------------------------
+
+'foundation/_config',
+'foundation/_base',
+'foundation/_attributes',
+'foundation/_fonts',
+
+// -------------------------------------
+//   MODULES (automatically injected!)
+// -------------------------------------
+
+// Please don't modify!
+// inject:scss
+'modules/_container',
+'modules/_diamond',
+'modules/_footer',
+'modules/_fullpage',
+'modules/_header',
+'modules/_hr',
+'modules/_listing',
+'modules/_module',
+'modules/_nav',
+'modules/_text',
+// endinject
+
+// -------------------------------------
+//   VENDOR
+// -------------------------------------
+
+'vendor/_external',
+
+// -------------------------------------
+//   INBOX
+// -------------------------------------
+
+'_inbox';
