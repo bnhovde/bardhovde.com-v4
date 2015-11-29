@@ -20,7 +20,9 @@
     flex-direction: column;
     justify-content: space-around;
     min-height: 100vh;
-    padding-top: 140px; 
+    padding-top: 80px; 
+    
+    @include breakpoint("adult-bear") { padding-top: 140px; }
 
 
     // -------------------------------------

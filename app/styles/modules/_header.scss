@@ -29,6 +29,7 @@
     transition: all 1s cubic-bezier(0, 0, 0.24, 0.85);
     transition-delay: .1s;
     
+    // Body class added while webfonts load
     .wf-loading & {
         visibility: hidden; 
         opacity: 0;
@@ -40,25 +41,45 @@
     // -------------------------------------
 
 
-    // ----- Element description ----- // 
+    // ----- Inner header container ----- // 
 
     &__inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        height: 80px;
         
-        height: 140px;
+        @include breakpoint("adult-bear") { height: 140px; }
     }
 
 
-    // ----- Element description ----- // 
+    // ----- Header title (with tiny logo) ----- // 
 
     &__title {
+        position: relative;
         margin: 0;
         border: 0;
+        
+        // Tiny logo - Visible when not on home page
+        > img {
+            position: absolute;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            vertical-align: sub;
+            
+            opacity: 0;
+            transform: scale(0);
+            transition: all .3s cubic-bezier(0, 0, 0.24, 0.85);
+        }
+        
+        // Title text wrapper
+        > span {
+            transition: all .3s cubic-bezier(0, 0, 0.24, 0.85);
+        }
     }
 
-    // ----- Element description ----- // 
+    // ----- Action button/link ----- // 
 
     &__action {
         letter-spacing: 2px;
@@ -70,8 +91,16 @@
     // -------------------------------------
 
 
-    // ----- Variation description ----- // 
+    // ----- Logo visible version ----- // 
 
-    &--variation {}
+    &[ui-show-logo="true"] {
+        
+        .header__title { 
+            > img { 
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
 
 }

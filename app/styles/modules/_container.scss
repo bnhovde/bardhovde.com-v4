@@ -19,8 +19,11 @@
     $container-wide: 1024px;
     
     max-width: $container-narrow;
-    margin: 0 auto;
+    margin: 0 $g-gutter;
     
+    @include breakpoint("adult-bear") {
+        margin: 0 auto;
+    }
     
     // -------------------------------------
     //   Variations

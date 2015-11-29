@@ -21,30 +21,34 @@
 
     // Active item variations
     &[ui-active-item="2"] {
-        .listing__item:nth-child(2) { opacity: 1; }
         .listing__item:nth-child(3) { transform: translate3d( 0, -$unit, 0 ); }
+        .listing__item:nth-child(2) { opacity: 1; }
+        .listing__item:nth-child(7) { transform: translate3d( 0, $unit, 0 ); }
+    }
+    &[ui-active-item="3"] {
+        .listing__item:nth-child(4) { transform: translate3d( 0, -$unit, 0 ); }
+        .listing__item:nth-child(3) { opacity: 1; }
+        .listing__item:nth-child(2) { transform: translate3d( 0, $unit, 0 ); }
+    }
+    &[ui-active-item="4"] {
+        .listing__item:nth-child(5) { transform: translate3d( 0, -$unit, 0 ); }
+        .listing__item:nth-child(4) { opacity: 1; }
+        .listing__item:nth-child(3) { transform: translate3d( 0, $unit, 0 ); }
+    }
+    &[ui-active-item="5"] {
+        .listing__item:nth-child(6) { transform: translate3d( 0, -$unit, 0 ); }
+        .listing__item:nth-child(5) { opacity: 1; }
+        .listing__item:nth-child(4) { transform: translate3d( 0, $unit, 0 ); }
+    }
+    &[ui-active-item="6"] {
+        .listing__item:nth-child(7) { transform: translate3d( 0, -$unit, 0 ); }
+        .listing__item:nth-child(6) { opacity: 1; }
         .listing__item:nth-child(5) { transform: translate3d( 0, $unit, 0 ); }
     }
-
-    // Active item variations
-    &[ui-active-item="3"] {
-        .listing__item:nth-child(2) { transform: translate3d( 0, $unit, 0 ); }
-        .listing__item:nth-child(3) { opacity: 1; }
-        .listing__item:nth-child(4) { transform: translate3d( 0, -$unit, 0 ); }
-    }
-
-    // Active item variations
-    &[ui-active-item="4"] {
-        .listing__item:nth-child(3) { transform: translate3d( 0, $unit, 0 ); }
-        .listing__item:nth-child(4) { opacity: 1; }
-        .listing__item:nth-child(5) { transform: translate3d( 0, -$unit, 0 ); }
-    }
-
-    // Active item variations
-    &[ui-active-item="5"] {
+    &[ui-active-item="7"] {
         .listing__item:nth-child(2) { transform: translate3d( 0, -$unit, 0 ); }
-        .listing__item:nth-child(4) { transform: translate3d( 0, $unit, 0 ); }
-        .listing__item:nth-child(5) { opacity: 1; }
+        .listing__item:nth-child(7) { opacity: 1; }
+        .listing__item:nth-child(6) { transform: translate3d( 0, $unit, 0 ); }
     }
 
     // -------------------------------------
