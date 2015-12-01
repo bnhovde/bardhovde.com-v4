@@ -20,9 +20,6 @@
     flex-direction: column;
     justify-content: space-around;
     min-height: 100vh;
-    padding-top: 80px; 
-    
-    @include breakpoint("adult-bear") { padding-top: 140px; }
 
 
     // -------------------------------------
@@ -30,13 +27,20 @@
     // -------------------------------------
 
 
-    // ----- Element description ----- // 
+    // ----- Body Container ----- // 
 
     &__body {
         display: flex;
         justify-content: center;
         align-content: center;
         flex-grow: 1;
+    }
+
+
+    // ----- Footer Container ----- // 
+
+    &__footer {
+        margin-bottom: $g-gutter / 2;
     }
 
 }

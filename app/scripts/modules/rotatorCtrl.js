@@ -6,7 +6,7 @@ var Velocity = Velocity || {};
     'use strict';
 
     /**
-    * Animation Controller
+    * Rotator Animation Controller
     */
     
     ns.animationCtrl = (function(){
@@ -15,13 +15,12 @@ var Velocity = Velocity || {};
         var DOM = {
             body            : document.querySelectorAll('body')[0],
             rotator 		: document.getElementById('things'),
-            rotatorItems    : document.querySelectorAll('.listing__item')
+            rotatorItems    : document.querySelectorAll('.rotator__item')
         };
         
         var settings = {
             items: 0,
-            activeItem: 0,
-            scrollTriggered: false
+            activeItem: 0
         };
         
         var s = settings;
@@ -32,6 +31,9 @@ var Velocity = Velocity || {};
         * @desc Initialises the menu
         */ 
         var init = function () {
+            
+            // Check if rotator exists, return if not
+            if (DOM.rotator === null) { return false; }
             
             // Initialise animation controller
             DOM.body.setAttribute('ui-animation-ctrl', 'is-started');

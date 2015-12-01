@@ -8,7 +8,7 @@ var Velocity = Velocity || {};
     'use strict';
 
     /**
-    * Animation Controller
+    * Rotator Animation Controller
     */
 
     ns.animationCtrl = (function () {
@@ -22,8 +22,7 @@ var Velocity = Velocity || {};
 
         var settings = {
             items: 0,
-            activeItem: 0,
-            scrollTriggered: false
+            activeItem: 0
         };
 
         var s = settings;
@@ -74,4 +73,4 @@ var Velocity = Velocity || {};
         return module;
     })();
 })(window, document);
-//# sourceMappingURL=animationCtrl.js.map
+//# sourceMappingURL=rotatorCtrl.js.map

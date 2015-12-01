@@ -76,11 +76,31 @@ var ns = ns || {};
             }
         };
 
+        /**
+        * @name getQueryVariable
+        * @desc Checks URL for query variable
+        * @attr variable (string) - var to check
+        * @returns value (string), false if none found
+        */
+        var getQueryVariable = function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split('&');
+
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split('=');
+                if (pair[0] == variable) {
+                    return pair[1];
+                }
+            }
+            return false;
+        };
+
         //////////////////
 
         var module = {
             closest: closest,
-            closestClass: closestClass
+            closestClass: closestClass,
+            getQueryVariable: getQueryVariable
         };
 
         return module;

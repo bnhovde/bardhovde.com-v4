@@ -69,6 +69,12 @@ a {
     text-decoration: none;
     padding-bottom: 4px;
     border-bottom: 1px solid $g-color-link;
+    
+    transition: all .3s ease-in-out;
+    
+    &:hover {
+         filter: invert(.8);
+    }
 }
 
 

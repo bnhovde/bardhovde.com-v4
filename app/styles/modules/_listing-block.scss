@@ -1,7 +1,7 @@
 // *************************************
 //
-//   listing
-//   -> Generic listing unit
+//   listing-block
+//   -> Block variant of listing
 //
 // *************************************
 
@@ -9,23 +9,24 @@
 //   Base
 // -------------------------------------
 
-.listing {
+.listing-block {
 
     // -------------------------------------
     //   Variables
     // -------------------------------------
-    
-    
-    padding-bottom: $g-gutter * 2;
-    border-bottom: 1px solid #E6E6E6;
 
+    $col-1: #2E94AD;
+    $col-2: #AD2E2E;
+    $col-3: #48AD2E;
+
+    padding: $g-gutter $g-gutter $g-gutter * 2 $g-gutter;
+    
     // Clearfix
     &:after{
         content:"";
         display:table;
         clear:both;
     }
-    
     
     // -------------------------------------
     //   Elements
@@ -50,36 +51,31 @@
     }
 
 
-    // ----- List Item ----- // 
+    // ----- Link Item ----- // 
 
     &__item {
         float: right;
-        width: 52%;
-        list-style-type: none;
-        
-        // Dash prepened
-        &:before {
-            display: inline-block;
-            content: "-";
-            width: $g-gutter;
-            margin-left: -28px;
-        }
+        width: 60%;
+        margin-bottom: $g-gutter;
         
         // Caption text
         > span {
             font-size: 1rem;
-            text-transform: uppercase;
-            white-space: nowrap;
+            display: block;
+            margin-top: $g-gutter / 2;
+            line-height: 1.6rem;
         }
     }
-
-
+    
     // -------------------------------------
     //   Variations
     // -------------------------------------
 
 
-    // ----- Variation description ----- // 
+    // ----- Color variations ----- // 
 
+    &--alt1 { border-left: $g-gutter / 2 solid $col-1; }
+    &--alt2 { border-left: $g-gutter / 2 solid $col-2; }
+    &--alt3 { border-left: $g-gutter / 2 solid $col-3; }
 
 }

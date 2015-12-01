@@ -18,8 +18,11 @@
     $module-var:    7em;
     $module-col-fg: #3B5998;
     $module-col-bg: #c0deed;
-
-
+    
+    // Sample BG
+    background-image: -webkit-linear-gradient(-90deg, transparent 0%, transparent 50%, white 50%, white 100%), -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.01) 50%, white 50%, white 100%);
+    background-size: 8px 8px;
+    
     // -------------------------------------
     //   Elements
     // -------------------------------------

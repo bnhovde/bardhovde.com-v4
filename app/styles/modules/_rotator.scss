@@ -1,0 +1,80 @@
+// *************************************
+//
+//   rotator
+//   -> Inline listing rotator
+//
+// *************************************
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.rotator {
+    
+    
+
+    // -------------------------------------
+    //   Variables & Base
+    // -------------------------------------
+    
+    $unit: 35px;
+
+    // Active item variations
+    &[ui-active-item="2"] {
+        .rotator__item:nth-child(3) { transform: translate3d( 0, -$unit, 0 ); }
+        .rotator__item:nth-child(2) { opacity: 1; }
+        .rotator__item:nth-child(7) { transform: translate3d( 0, $unit, 0 ); }
+    }
+    &[ui-active-item="3"] {
+        .rotator__item:nth-child(4) { transform: translate3d( 0, -$unit, 0 ); }
+        .rotator__item:nth-child(3) { opacity: 1; }
+        .rotator__item:nth-child(2) { transform: translate3d( 0, $unit, 0 ); }
+    }
+    &[ui-active-item="4"] {
+        .rotator__item:nth-child(5) { transform: translate3d( 0, -$unit, 0 ); }
+        .rotator__item:nth-child(4) { opacity: 1; }
+        .rotator__item:nth-child(3) { transform: translate3d( 0, $unit, 0 ); }
+    }
+    &[ui-active-item="5"] {
+        .rotator__item:nth-child(6) { transform: translate3d( 0, -$unit, 0 ); }
+        .rotator__item:nth-child(5) { opacity: 1; }
+        .rotator__item:nth-child(4) { transform: translate3d( 0, $unit, 0 ); }
+    }
+    &[ui-active-item="6"] {
+        .rotator__item:nth-child(7) { transform: translate3d( 0, -$unit, 0 ); }
+        .rotator__item:nth-child(6) { opacity: 1; }
+        .rotator__item:nth-child(5) { transform: translate3d( 0, $unit, 0 ); }
+    }
+    &[ui-active-item="7"] {
+        .rotator__item:nth-child(2) { transform: translate3d( 0, -$unit, 0 ); }
+        .rotator__item:nth-child(7) { opacity: 1; }
+        .rotator__item:nth-child(6) { transform: translate3d( 0, $unit, 0 ); }
+    }
+
+    // -------------------------------------
+    //   Elements
+    // -------------------------------------
+
+
+    // ----- Element description ----- // 
+
+    &__intro {
+        display: inline-block;
+    }
+
+
+    // ----- Element description ----- // 
+
+    &__item {
+        display: inline-block;
+        position: absolute;
+        margin: 0 10px;
+        padding: 0 10px;
+        background-color: black;
+        color: rgba(255, 255, 255, 0.95);
+        font-weight: 100;
+        opacity: 0;
+        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+}
