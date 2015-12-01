@@ -2181,7 +2181,7 @@ ul ul, ol ol, ul ol, ol ul {
 }
 .listing-block__item {
   float: right;
-  width: 60%;
+  width: 55%;
   margin-bottom: 24px;
 }
 .listing-block__item > span {
