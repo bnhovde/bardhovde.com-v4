@@ -46,8 +46,16 @@
     // -------------------------------------
 
 
-    // ----- Variation description ----- // 
+    // ----- Single grey line, full width ----- // 
 
-    &--variation {}
+    &--line {
+        
+        height: 1px;
+        margin: 40px 0 20px 0;
+        padding: 0;
+        background-color: #F3F3F3;
+        
+        &:after { content: ""; }
+    }
 
 }

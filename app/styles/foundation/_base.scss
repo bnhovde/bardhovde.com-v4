@@ -73,7 +73,7 @@ a {
     transition: all .3s ease-in-out;
     
     &:hover {
-         filter: invert(.8);
+         opacity: .3;
     }
 }
 

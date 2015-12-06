@@ -1886,8 +1886,7 @@ a {
   transition: all .3s ease-in-out;
 }
 a:hover {
-  -webkit-filter: invert(0.8);
-          filter: invert(0.8);
+  opacity: .3;
 }
 
 h1, .h1, h2, .h2 {
@@ -1993,6 +1992,99 @@ ul ul, ol ol, ul ol, ol ul {
   .-page-push {
     padding-top: 140px;
   }
+}
+
+.icon {
+  display: inline-block;
+  fill: currentColor;
+}
+
+.card__media {
+  position: relative;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 200px;
+  padding: 0;
+  color: white;
+  border: 0;
+}
+.card__media:hover .card__circle {
+  -webkit-transform: scale(40);
+          transform: scale(40);
+  opacity: 0.6;
+}
+.card__icon {
+  height: 50%;
+  width: 50%;
+}
+.card__title {
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+.card__meta {
+  font-size: 19px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  line-height: 32px;
+  line-height: 2rem;
+  letter-spacing: 0.5px;
+  color: #4D4D4D;
+}
+.card__copy {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 32px;
+  line-height: 2rem;
+  letter-spacing: 0.5px;
+  font-style: italic;
+}
+.card__action {
+  font-size: 16px;
+  font-size: 1rem;
+}
+.card__circle {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 32px;
+  width: 2rem;
+  height: 32px;
+  height: 2rem;
+  margin-left: -16px;
+  margin-left: -1rem;
+  margin-top: -16px;
+  margin-top: -1rem;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.card--v1 .card__media {
+  background-color: #0B3C4D;
+}
+.card--v2 .card__media {
+  background-color: #0E5066;
+}
+.card--v3 .card__media {
+  background-color: #136480;
+}
+.card--v4 .card__media {
+  background-color: #127899;
+}
+.card--v5 .card__media {
+  background-color: #1A8BB3;
+}
+.card--v6 .card__media {
+  background-color: #0B3C4D;
 }
 
 .container {
@@ -2155,6 +2247,15 @@ ul ul, ol ol, ul ol, ol ul {
   font-size: 32px;
   font-size: 2rem;
   letter-spacing: 20px;
+}
+.hr--line {
+  height: 1px;
+  margin: 40px 0 20px 0;
+  padding: 0;
+  background-color: #F3F3F3;
+}
+.hr--line:after {
+  content: "";
 }
 
 .listing-block {

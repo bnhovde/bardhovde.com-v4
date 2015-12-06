@@ -1,0 +1,139 @@
+// *************************************
+//
+//   card
+//   -> Showcase card module
+//
+// *************************************
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.card {
+
+    // -------------------------------------
+    //   Variables
+    // -------------------------------------
+
+    $card-var:    7em;
+    $card-col-fg: #3B5998;
+    $card-col-bg: #c0deed;
+    
+    
+    // -------------------------------------
+    //   Elements
+    // -------------------------------------
+
+
+    // ----- Media contents ----- // 
+
+    &__media {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        padding: 0;
+        color: white;
+        border: 0;
+        
+        &:hover{
+            .card__circle {
+                transform: scale(40);
+                opacity: 0.6;
+            }
+        }
+    }
+
+    // ----- Media Icon ----- // 
+
+    &__icon {
+        height: 50%;
+        width: 50%;
+    }
+
+
+    // ----- Card Headline ----- // 
+
+    &__title {
+        margin-top: 1rem;
+    }
+
+    // ----- Card Meta texts ----- // 
+
+    &__meta {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        line-height: 2rem;
+        letter-spacing: 0.5px;
+        color: #4D4D4D;
+    }
+
+    // ----- Card copy contents ----- // 
+
+    &__copy {
+        font-size: 1rem;
+        line-height: 2rem;
+        letter-spacing: 0.5px;
+        font-style: italic;
+    }
+
+    // ----- Card action link ----- // 
+
+    &__action {
+        font-size: 1rem;
+    }
+
+    // ----- Growing circle jazz ----- // 
+
+    &__circle {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 2rem;
+        height: 2rem;
+        margin-left: -1rem;
+        margin-top: -1rem;
+        background-color: white;
+        border-radius: 50%;
+        opacity: 0;
+
+        transition: all 0.3s ease-in-out;
+    }
+    
+    // -------------------------------------
+    //   Variations
+    // -------------------------------------
+
+
+    // ----- Variation description ----- // 
+
+    &--v1 { .card__media { background-color: #0B3C4D; } }
+    &--v2 { .card__media { background-color: #0E5066; } }
+    &--v3 { .card__media { background-color: #136480; } }
+    &--v4 { .card__media { background-color: #127899; } }
+    &--v5 { .card__media { background-color: #1A8BB3; } }
+    &--v6 { .card__media { background-color: #0B3C4D; } }
+
+
+    // ----- Variation description ----- // 
+
+    // &--v1 {
+    //     .card__media { background-color: #F0E14C; }
+    // }
+    // &--v2 {
+    //     .card__media { background-color: #FFBB20; }
+    // }
+    // &--v3 {
+    //     .card__media { background-color: #FA7B12; }
+    // }
+    // &--v4 {
+    //     .card__media { background-color: #E85305; }
+    // }
+    // &--v5 {
+    //     .card__media { background-color: #59CC0D; }
+    // }
+
+}
