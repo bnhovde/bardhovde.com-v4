@@ -1,4 +1,5 @@
 ---
+layout: "job"
 title: "Forkliftr"
 type: "Hardware/IOT & Game Dev"
 tags: "Development"

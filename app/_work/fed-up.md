@@ -1,4 +1,5 @@
 ---
+layout: "job"
 title: "FED up CSS Framework"
 type: "Workflow, Open source"
 tags: "Concept, Planning, Development"

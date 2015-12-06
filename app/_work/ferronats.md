@@ -1,4 +1,5 @@
 ---
+layout: "job"
 title: "Ferronats"
 type: "Tech talk"
 tags: "Creation & Presentation"

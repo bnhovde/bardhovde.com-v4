@@ -1,4 +1,5 @@
 ---
+layout: "job"
 title: "Zyliss Easy-Pull"
 type: "Web Project"
 tags: "Development"

@@ -1,4 +1,5 @@
 ---
+layout: "job"
 title: "Angular booking app"
 type: "Web Application"
 tags: "Planning, Development"
