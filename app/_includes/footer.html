@@ -1,0 +1,50 @@
+<footer class="footer container">
+    <nav class="nav container">
+        {% for my_page in site.pages %}
+          {% if my_page.title %}
+          <a class="nav__item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          {% endif %}
+        {% endfor %}
+    </nav>
+</footer>
+
+<!--[if lt IE 9]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Google Analytics -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/compiled/modules/rotatorCtrl.js"></script>
+<script src="scripts/compiled/main.js"></script>
+<!-- endbuild -->
+
+<!-- Typekit -->
+<script>
+    
+    // Global namespace
+    var ns = ns || {};
+    
+    WebFontConfig = {
+        google: { families: [ 'Raleway:300,600,200,100:latin' ] }
+    };
+    
+    (function(d) {
+        var wf = d.createElement('script'), s = d.scripts[0];
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+        s.parentNode.insertBefore(wf, s);
+    })(document);
+</script>
