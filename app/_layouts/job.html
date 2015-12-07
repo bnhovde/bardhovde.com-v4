@@ -3,10 +3,10 @@ layout: page
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-    <header class="post-header">
+    <header class="post__header">
 
         <div class="card card--{{ page.variant }}">
-            <div class="card__media">
+            <div class="post__media card__media">
                 {% include collection-nav.html %}
                 <svg class="card__icon icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-{{ page.icon }}"></use></svg>    
             </div>
@@ -21,7 +21,7 @@ layout: page
       
     </header>
 
-    <div class="post-content" itemprop="articleBody">
+    <div class="post__content" itemprop="articleBody">
         {{ content }}
     </div>
 

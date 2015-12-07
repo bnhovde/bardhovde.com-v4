@@ -108,14 +108,39 @@
     // -------------------------------------
 
 
-    // ----- Variation description ----- // 
+    // ----- Stacked card variation ----- // 
 
-    &--v1 { .card__media { background-color: #0B3C4D; } }
-    &--v2 { .card__media { background-color: #0E5066; } }
-    &--v3 { .card__media { background-color: #136480; } }
-    &--v4 { .card__media { background-color: #127899; } }
-    &--v5 { .card__media { background-color: #1A8BB3; } }
-    &--v6 { .card__media { background-color: #0B3C4D; } }
+    &--stack {
+        padding: 0 $g-gutter;
+        border-left: 12px solid #1A8BB3;
+    }
+
+    // ----- Color variations ----- // 
+
+    &--v1 { 
+        border-color: #F0E14C;
+        .card__media { background-color: #0B3C4D; } 
+    }
+    &--v2 { 
+        border-color: #FFBB20;
+        .card__media { background-color: #0E5066; } 
+    }
+    &--v3 { 
+        border-color: #FA7B12;
+        .card__media { background-color: #136480; } 
+    }
+    &--v4 { 
+        border-color: #E85305;
+        .card__media { background-color: #127899; } 
+    }
+    &--v5 { 
+        border-color: #59CC0D;
+        .card__media { background-color: #1A8BB3; } 
+    }
+    &--v6 { 
+        border-color: #0B3C4D;
+        .card__media { background-color: #0B3C4D; } 
+    }
 
 
     // ----- Variation description ----- // 

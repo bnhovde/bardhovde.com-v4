@@ -7,7 +7,7 @@ permalink: /about/
 
 #About.
 
-Originally from Norway I moved to the UK after finishing my education. Wanting to become a digital designer I managed to get a role in a creative web team in <a href="https://www.oldmutualwealth.co.uk/">Old Mutual Wealth</a>.
+Originally from Norway I moved to the UK after finishing my education. Wanting to become a web-designer I managed to get a role in a creative web team in <a href="https://www.oldmutualwealth.co.uk/">Old Mutual Wealth</a>.
 
 Shortly after I found that code makes more sense to me. I was lucky enough to work in a flexible team that promoted personal progression, and so I moved into a developer role.
 

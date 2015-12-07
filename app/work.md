@@ -51,22 +51,20 @@ I’ve been lucky to work on a wide range of projects in the last few years. Bel
 </div>          
 
 
-<article class="card">
+<article class="card card--stack card--v1">
 	<h2 class="card__title h4">DBD Media</h2>
 	<div class="card__meta">Web Project</div>
+	<a class="card__action" href="#">View website</a>
 </article>
 
-<article class="card">
+<article class="card card--stack card--v2">
 	<h2 class="card__title h4">Pentalver</h2>
 	<div class="card__meta">Web Project</div>
+	<a class="card__action" href="#">View website</a>
 </article>
 
-<article class="card">
+<article class="card card--stack card--v3">
 	<h2 class="card__title h4">Forkliftr</h2>
 	<div class="card__meta">Web Project</div>
-</article>
-
-<article class="card">
-	<h2 class="card__title h4">Do you really need a CMS?</h2>
-	<div class="card__meta">Blog Post</div>
+	<a class="card__action" href="#">View website</a>
 </article>

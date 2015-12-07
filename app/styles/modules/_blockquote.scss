@@ -1,7 +1,7 @@
 // *************************************
 //
-//   text
-//   -> Text helpers
+//   blockquote
+//   -> Module description
 //
 // *************************************
 
@@ -9,15 +9,14 @@
 //   Base
 // -------------------------------------
 
-.t {
+blockquote {
 
     // -------------------------------------
-    //   Variations
+    //   Variables
     // -------------------------------------
 
-
-    // ----- First text element of container ----- // 
-
-    &--first { margin: 0; }
+    margin: 60px 40px;
+    padding: 0 40px;
+    border-left: 12px solid #127899;
 
 }
