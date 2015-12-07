@@ -1994,6 +1994,16 @@ ul ul, ol ol, ul ol, ol ul {
   }
 }
 
+.-sr-only {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
 .icon {
   display: inline-block;
   fill: currentColor;
@@ -2017,8 +2027,8 @@ ul ul, ol ol, ul ol, ol ul {
   border: 0;
 }
 .card__media:hover .card__circle {
-  -webkit-transform: scale(40);
-          transform: scale(40);
+  -webkit-transform: scale(30);
+          transform: scale(30);
   opacity: 0.6;
 }
 .card__icon {
@@ -2044,7 +2054,6 @@ ul ul, ol ol, ul ol, ol ul {
   line-height: 32px;
   line-height: 2rem;
   letter-spacing: 0.5px;
-  font-style: italic;
 }
 .card__action {
   font-size: 16px;
@@ -2085,6 +2094,40 @@ ul ul, ol ol, ul ol, ol ul {
 }
 .card--v6 .card__media {
   background-color: #0B3C4D;
+}
+
+.chevron {
+  border: 0;
+}
+.chevron:before {
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 13.33333px;
+  left: 0;
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+  color: white;
+  vertical-align: top;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.chevron--right:before {
+  left: -5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.chevron--bottom:before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.chevron--left:before {
+  left: 5px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
 
 .container {
@@ -2357,6 +2400,30 @@ ul ul, ol ol, ul ol, ol ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 60px;
+}
+
+.pagination {
+  position: absolute;
+  left: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.pagination__item {
+  padding: 24px;
+}
+.pagination--first {
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .rotator[ui-active-item="2"] .rotator__item:nth-child(3) {

@@ -1,0 +1,69 @@
+// *************************************
+//
+//   chevron
+//   -> Arrows
+//
+// *************************************
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.chevron {
+
+    // -------------------------------------
+    //   Variables
+    // -------------------------------------
+
+    $size:        20px;
+    $thickness:   2px;
+    $col-fg:    white;
+
+    border: 0;
+    
+    // -------------------------------------
+    //   Elements
+    // -------------------------------------
+
+
+    // ----- Element description ----- // 
+
+    &:before {
+        content: '';
+        display: inline-block;
+        height: $size;
+        width: $size;
+        position: relative;
+        top: $size / 1.5;
+        left: 0;
+        border-style: solid;
+        border-width: $thickness $thickness 0 0;
+        color: $col-fg;
+        vertical-align: top;
+        transform: rotate(-45deg);
+    }
+
+
+    // -------------------------------------
+    //   Variations
+    // -------------------------------------
+
+
+    // ----- Variation description ----- // 
+
+    &--right:before {
+        left: -$size / 4;
+        transform: rotate(45deg);
+    }
+    
+    &--bottom:before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+    
+    &--left:before {
+        left: $size / 4;
+        transform: rotate(-135deg);
+    }
+
+}

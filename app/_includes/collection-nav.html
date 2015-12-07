@@ -1,0 +1,36 @@
+{% capture the_collection %}{{page.collection}}{% endcapture %}
+  {% if page.collection %}
+    {% assign  document = site[the_collection]  %}
+  {% endif %}
+{% for links in document  %}
+  {% if links.title == page.title %}
+    {% unless forloop.first %}
+      {% assign prevurl = prev.url %}
+    {% endunless %}
+    {% unless forloop.last %}
+      {% assign next = document[forloop.index] %}
+      {% assign nexturl = next.url %}
+    {% endunless %}
+  {% endif %}
+  {% assign prev = links %}
+{% endfor %}
+
+<div class="pagination {% if prevurl %}{% else %} pagination--first {% endif %}">
+{% if prevurl %}
+    <a href="{{prevurl}}" class="pagination__item chevron chevron--left">
+        <span class="-sr-only">Prev</span>
+    </a>
+{% endif %}
+{% if nexturl %}
+    <a href="{{nexturl}}" class="pagination__item chevron chevron--right">
+        <span class="-sr-only">Next</span>
+    </a>
+{% endif %}
+</div>
+
+<script>
+    document.body.onkeyup = function(e){
+        if (e.keyCode == '37') { window.location = '{{prevurl}}'; }
+        if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
+    };
+</script>

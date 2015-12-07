@@ -3,13 +3,26 @@ layout: page
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
+    <header class="post-header">
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+        <div class="card card--{{ page.variant }}">
+            <div class="card__media">
+                {% include collection-nav.html %}
+                <svg class="card__icon icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-{{ page.icon }}"></use></svg>    
+            </div>
+            <h1 class="card__title" itemprop="name headline">{{ page.title }}</h1>
+            <div class="card__meta">{{ page.type }}</div>
+            <div class="card__copy">{{ page.tags }}</div>
+        </div>
+        
+        <hr class="hr hr--line">
+        
+        
+      
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+        {{ content }}
+    </div>
 
 </article>

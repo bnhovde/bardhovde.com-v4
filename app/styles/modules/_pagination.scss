@@ -1,0 +1,48 @@
+// *************************************
+//
+//   pagination
+//   -> Arrow pagination for work items
+//
+// *************************************
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.pagination {
+
+    // -------------------------------------
+    //   Variables
+    // -------------------------------------
+
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    // -------------------------------------
+    //   Elements
+    // -------------------------------------
+
+    // ----- Navigation ----- // 
+
+    &__item {
+        padding: $g-gutter;
+    }
+
+
+    // -------------------------------------
+    //   Variations
+    // -------------------------------------
+
+
+    // ----- First page of pagination ----- // 
+
+    &--first {
+        flex-direction: row-reverse;
+    }
+
+}
