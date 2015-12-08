@@ -1,5 +1,5 @@
 <footer class="footer container">
-    <nav class="nav container">
+    <nav class="nav">
         {% for my_page in site.pages %}
           {% if my_page.title %}
           <a class="nav__item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>

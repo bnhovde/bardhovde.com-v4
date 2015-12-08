@@ -18,8 +18,10 @@
     $col-1: #FA7B12;
     $col-2: #E85305;
     $col-3: #59CC0D;
-
-    padding: $g-gutter $g-gutter $g-gutter * 2 $g-gutter;
+    
+    padding: 0 0 $g-gutter * 2 $g-gutter;
+    
+    @include breakpoint('baby-bear'){ padding: $g-gutter $g-gutter $g-gutter * 2 $g-gutter; }
     
     // Clearfix
     &:after{
@@ -36,10 +38,13 @@
     // ----- List title Item ----- // 
 
     &__title {
-        float: left;
-        width: 40%;
         font-weight: 600;
-
+        
+        @include breakpoint('baby-bear'){
+            float: left;
+            width: 40%;
+        }
+        
         // Smaller caption text
         > span {
             display: block;
@@ -54,9 +59,12 @@
     // ----- Link Item ----- // 
 
     &__item {
-        float: right;
-        width: 55%;
         margin-bottom: $g-gutter;
+
+        @include breakpoint('baby-bear'){
+            float: right;
+            width: 55%;
+        }
         
         // Caption text
         > span {

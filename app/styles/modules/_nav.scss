@@ -18,10 +18,15 @@
     $nav-var:    7em;
     $nav-col-fg: #3B5998;
     $nav-col-bg: #c0deed;
+    
+    padding-bottom: 15px;
+    
+    @include breakpoint('baby-bear'){
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: $g-gutter * 2;
+    }
 
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 60px;
 
     // -------------------------------------
     //   Elements
@@ -31,7 +36,8 @@
     // ----- Element description ----- // 
 
     &__item {
-        
+        display: block;
+        margin-bottom: 12px;
     }
 
 

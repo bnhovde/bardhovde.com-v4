@@ -25,11 +25,17 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 30px;
-    line-height: 45px;
+    font-size: 21px;
+    line-height: 33.18px;
     margin: 0;
     padding: 0;
     color: $g-color-text;
+    
+    // Font size change
+    @include breakpoint('teen-bear'){
+        font-size: 30px;
+        line-height: 45px;
+    }
 }
 
 ul, li {
@@ -97,10 +103,16 @@ h1,
     font-family: inherit;
     font-weight: 600;
     font-style: inherit;
-    font-size: 51px;
-    line-height: 90px;
-    margin-top: 45px;
+    font-size: 36px;
+    line-height: 1.15;
+    margin-top: 25px;
     margin-bottom: 0px;
+    
+    @include breakpoint('teen-bear'){
+        font-size: 51px;
+        line-height: 90px;
+        margin-top: 45px;
+    }
 }
 h2,
 .h2 {
@@ -127,10 +139,16 @@ h4,
     font-family: inherit;
     font-weight: 600;
     font-style: inherit;
-    font-size: 31px;
-    line-height: 45px;
+    font-size: 24px;
+    line-height: 35px;
     margin-top: 45px;
     margin-bottom: 0px;
+    
+    @include breakpoint('teen-bear'){
+        font-size: 31px;
+        line-height: 45px;
+        margin-top: 45px;
+    }
 }
 h5,
 .h5 {
@@ -144,8 +162,12 @@ h5,
 }
 p, ul, ol, pre, table, blockquote {
     margin-top: 0px;
-    margin-bottom: 45px;
+    margin-top: 21px;
     letter-spacing: 0.5px;
+    
+    @include breakpoint('teen-bear'){
+        margin-bottom: 45px;
+    }
 }
 ul ul, ol ol, ul ol, ol ul {
     margin-top: 0;

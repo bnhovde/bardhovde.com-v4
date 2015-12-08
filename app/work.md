@@ -33,18 +33,17 @@ I’ve been lucky to work on a wide range of projects in the last few years. Bel
 					<div class="card__meta">{{ job.type }}</div>
 					<div class="card__copy">{{ job.tags }}</div>
 					<a class="card__action" href="{{ job.url }}">View details</a>
+					<div class="card__footer"></div>
 				</article>
 			</div><!--
 		
 		{% if modulo == '1' or modulo == '3' %}
 			--></div>
-			<hr class="hr hr--line" />
 			<div class="grid"><!--
 		{% endif %}
 		
 		{% if forloop.last %}
 			--></div>
-			<hr class="hr hr--line" />
 		{% endif %}
 		
 	{% endfor %}

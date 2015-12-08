@@ -16,8 +16,10 @@
     // -------------------------------------
     
     
-    padding-bottom: $g-gutter * 2;
+    padding-bottom: $g-gutter;
     border-bottom: 1px solid #E6E6E6;
+    
+    @include breakpoint('baby-bear'){ padding-bottom: $g-gutter; }
 
     // Clearfix
     &:after{
@@ -35,9 +37,14 @@
     // ----- List title Item ----- // 
 
     &__title {
-        float: left;
-        width: 40%;
+        margin: 12px 0;
         font-weight: 600;
+        
+        @include breakpoint('baby-bear'){
+            float: left;
+            width: 40%;
+            margin-left: 0;
+        }
 
         // Smaller caption text
         > span {
@@ -53,9 +60,15 @@
     // ----- List Item ----- // 
 
     &__item {
-        float: right;
-        width: 52%;
+        
+        margin-left: $g-gutter * 2;
         list-style-type: none;
+        
+        @include breakpoint('baby-bear'){
+            float: right;
+            width: 52%;
+            margin-left: 0;
+        }
         
         // Dash prepened
         &:before {
@@ -79,7 +92,10 @@
     // -------------------------------------
 
 
-    // ----- Variation description ----- // 
-
-
+    // ----- Last child gets no border-bottom ----- // 
+    
+    &:last-child {
+        padding: 0;
+        border: 0;
+    }
 }

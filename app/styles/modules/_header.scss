@@ -60,22 +60,19 @@
         margin: 0;
         border: 0;
         
-        // Tiny logo - Visible when not on home page
+        // Tiny logo - Visible on mobile
         > img {
-            position: absolute;
-            left: 0;
             width: 40px;
             height: 40px;
-            vertical-align: sub;
+            vertical-align: middle;
             
-            opacity: 0;
-            transform: scale(0);
-            transition: all .3s cubic-bezier(0, 0, 0.24, 0.85);
+            @include breakpoint('baby-bear'){ display: none; }
         }
         
-        // Title text wrapper
+        // Title text wrapper (hidden on mobile)
         > span {
-            transition: all .3s cubic-bezier(0, 0, 0.24, 0.85);
+            display: none;
+            @include breakpoint('baby-bear'){ display: inline; }
         }
     }
 
