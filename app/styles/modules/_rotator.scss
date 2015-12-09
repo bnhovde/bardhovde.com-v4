@@ -23,7 +23,7 @@
     &[ui-active-item="2"] {
         .rotator__item:nth-child(3) { transform: translate3d( 0, -$unit, 0 ); }
         .rotator__item:nth-child(2) { opacity: 1; }
-        .rotator__item:nth-child(7) { transform: translate3d( 0, $unit, 0 ); }
+        .rotator__item:nth-child(8) { transform: translate3d( 0, $unit, 0 ); }
     }
     &[ui-active-item="3"] {
         .rotator__item:nth-child(4) { transform: translate3d( 0, -$unit, 0 ); }
@@ -46,9 +46,14 @@
         .rotator__item:nth-child(5) { transform: translate3d( 0, $unit, 0 ); }
     }
     &[ui-active-item="7"] {
-        .rotator__item:nth-child(2) { transform: translate3d( 0, -$unit, 0 ); }
+        .rotator__item:nth-child(8) { transform: translate3d( 0, -$unit, 0 ); }
         .rotator__item:nth-child(7) { opacity: 1; }
         .rotator__item:nth-child(6) { transform: translate3d( 0, $unit, 0 ); }
+    }
+    &[ui-active-item="8"] {
+        .rotator__item:nth-child(2) { transform: translate3d( 0, -$unit, 0 ); }
+        .rotator__item:nth-child(8) { opacity: 1; }
+        .rotator__item:nth-child(7) { transform: translate3d( 0, $unit, 0 ); }
     }
 
     // -------------------------------------

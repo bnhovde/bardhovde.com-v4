@@ -9,12 +9,6 @@ var ns = ns || {};
     */
 
     ns.helpers = (function(){
-
-    	// App settings
-        var self = this,
-            settings = {
-                activeSection : null,
-            };
         
         //////////////////
 
@@ -71,7 +65,7 @@ var ns = ns || {};
             } else {
                 return new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);
             }
-        }
+        };
         
         
         /**
@@ -84,12 +78,12 @@ var ns = ns || {};
             var query = window.location.search.substring(1);
             var vars = query.split('&');
             
-            for (var i=0;i<vars.length;i++) {
+            for (var i = 0; i < vars.length; i++) {
                 var pair = vars[i].split('=');
-                if ( pair[0] == variable ){ return pair[1]; }
+                if ( pair[0] === variable ){ return pair[1]; }
             }
             return(false);
-        }
+        };
 
         //////////////////
 

@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Selected Work
+title: Selected Works
 permalink: /my-work/
+order: 1
 ---
 
 

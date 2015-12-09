@@ -1,8 +1,9 @@
 <footer class="footer container">
     <nav class="nav">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="nav__item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        {% assign sorted_pages = site.pages | sort:"order" %}
+        {% for node in sorted_pages %}
+          {% if node.title %}
+          <a class="nav__item" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
           {% endif %}
         {% endfor %}
     </nav>
@@ -22,14 +23,14 @@
     ga('create','UA-XXXXX-X');ga('send','pageview');
 </script>
 
-<!-- build:js scripts/vendor.js -->
+<!-- build:js /scripts/vendor.js -->
 <!-- bower:js -->
 <!-- endbower -->
 <!-- endbuild -->
 
-<!-- build:js scripts/main.js -->
-<script src="scripts/compiled/modules/rotatorCtrl.js"></script>
-<script src="scripts/compiled/main.js"></script>
+<!-- build:js /scripts/main.js -->
+<script src="/scripts/compiled/modules/rotatorCtrl.js"></script>
+<script src="/scripts/compiled/main.js"></script>
 <!-- endbuild -->
 
 <!-- Typekit -->

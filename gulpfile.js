@@ -48,7 +48,9 @@ gulp.task('jshint', function() {
 gulp.task('babel', function () {
     return gulp.src(['app/scripts/**/*.js', '!app/scripts/compiled/**/*.js'])
         .pipe($.sourcemaps.init())
-        .pipe($.babel())
+        .pipe($.babel({ 
+            blacklist: ['useStrict']
+        }))
         .pipe($.sourcemaps.write('.'))
         .pipe(gulp.dest('app/scripts/compiled/'));
 });
@@ -64,7 +66,7 @@ gulp.task('html', ['pixrem'], function() {
     });
 
     
-    var filesToProcess = 'app/*.html';
+    var filesToProcess = 'app/_includes/*.html';
     
 
     return gulp.src(filesToProcess)

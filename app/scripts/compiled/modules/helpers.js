@@ -1,5 +1,3 @@
-'use strict';
-
 var ns = ns || {};
 
 (function (window, document, undefined) {
@@ -11,12 +9,6 @@ var ns = ns || {};
     */
 
     ns.helpers = (function () {
-
-        // App settings
-        var self = this,
-            settings = {
-            activeSection: null
-        };
 
         //////////////////
 
@@ -88,7 +80,7 @@ var ns = ns || {};
 
             for (var i = 0; i < vars.length; i++) {
                 var pair = vars[i].split('=');
-                if (pair[0] == variable) {
+                if (pair[0] === variable) {
                     return pair[1];
                 }
             }

@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Selected Articles
+title: Articles
 permalink: /articles/
+order: 2
 ---
 
 

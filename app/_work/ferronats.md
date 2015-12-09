@@ -8,4 +8,4 @@ variant: "v3"
 order: "3"
 ---
 
-Post contents!
+Coming soon!

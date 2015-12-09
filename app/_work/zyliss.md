@@ -8,4 +8,4 @@ variant: "v5"
 order: "5"
 ---
 
-Post contents!
+Coming soon!
