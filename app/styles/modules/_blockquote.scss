@@ -14,9 +14,14 @@ blockquote {
     // -------------------------------------
     //   Variables
     // -------------------------------------
-
-    margin: 60px 40px;
-    padding: 0 40px;
+    
+    margin: 40px 0px;
+    padding: 0 0 0 40px;
     border-left: 12px solid #127899;
+    
+    @include breakpoint('baby-bear'){
+        margin: 60px 40px;
+        padding: 0 40px;
+    }
 
 }

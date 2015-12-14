@@ -2013,9 +2013,15 @@ ul ul, ol ol, ul ol, ol ul {
 }
 
 blockquote {
-  margin: 60px 40px;
-  padding: 0 40px;
+  margin: 40px 0px;
+  padding: 0 0 0 40px;
   border-left: 12px solid #127899;
+}
+@media (min-width: 30em) {
+  blockquote {
+    margin: 60px 40px;
+    padding: 0 40px;
+  }
 }
 
 .card__media {
@@ -2032,8 +2038,15 @@ blockquote {
           justify-content: center;
   height: 200px;
   padding: 0;
+  margin-left: -24px;
+  margin-right: -24px;
   color: white;
   border: 0;
+}
+@media (min-width: 37.5em) {
+  .card__media {
+    margin: 0;
+  }
 }
 .card__media:hover .card__circle {
   -webkit-transform: scale(30);
@@ -2198,6 +2211,11 @@ blockquote {
   color: #D01D3A;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.embed--tweet {
+  margin: 0 auto;
+  max-width: 500px;
 }
 
 .footer {

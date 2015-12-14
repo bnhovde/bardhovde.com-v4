@@ -12,6 +12,8 @@ Originally from Norway I moved to the UK after finishing my education. Wanting t
 
 Shortly after I found that code makes more sense to me. I was lucky enough to work in a flexible team that promoted personal progression, and so I moved into a developer role.
 
+> I found that ...
+
 Since then I've been lucky enough to work in a series of dev teams, from .NET environments to my current role at <a href="http://cddnation.com">cdd</a>.
 
 My areas of interest and experience are always changing, but currently they are as follows:
@@ -52,5 +54,5 @@ My areas of interest and experience are always changing, but currently they are 
 <ul class="listing">
 	<li class="listing__title">Others.</li>
 	<li class="listing__item">Animation</li>
-	<li class="listing__item"><a href="http://www.digitalhampshire.com/">Speaking</a> / <a href="https://medium.com/fed-or-dead">Writing</a></li>
+	<li class="listing__item"><a href="https://slides.com/bardhovde/">Speaking</a> / <a href="https://medium.com/fed-or-dead">Writing</a></li>
 </ul>

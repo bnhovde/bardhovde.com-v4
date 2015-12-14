@@ -13,7 +13,6 @@ I’ve been lucky to work on a wide range of projects in the last few years. Bel
 <hr class="hr hr--line" />
 
 <div class="cards">
-
     {% assign sorted = (site.work | sort: 'order') %}
 	
     {% for job in sorted %}
@@ -48,8 +47,7 @@ I’ve been lucky to work on a wide range of projects in the last few years. Bel
 		{% endif %}
 		
 	{% endfor %}
-</div>          
-
+</div>
 
 <article class="card card--stack card--v1">
 	<h2 class="card__title h4">DBD Media</h2>

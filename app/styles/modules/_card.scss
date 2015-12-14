@@ -35,8 +35,12 @@
         justify-content: center;
         height: 200px;
         padding: 0;
+        margin-left: -$g-gutter;
+        margin-right: -$g-gutter;
         color: white;
         border: 0;
+        
+        @include breakpoint('child-bear'){ margin: 0; }
         
         &:hover{
             .card__circle {
