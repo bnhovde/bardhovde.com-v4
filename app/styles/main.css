@@ -1997,6 +1997,10 @@ ul ul, ol ol, ul ol, ol ul {
   }
 }
 
+.-l-center {
+  text-align: center;
+}
+
 .-sr-only {
   position: absolute !important;
   height: 1px;
@@ -2332,7 +2336,7 @@ blockquote {
           transform: scale(1);
 }
 
-.hr {
+hr {
   display: block;
   padding: 24px;
   margin: 24px;
@@ -2340,12 +2344,12 @@ blockquote {
   text-align: center;
 }
 @media (min-width: 48em) {
-  .hr {
+  hr {
     padding: 40px;
     margin: 0;
   }
 }
-.hr:after {
+hr:after {
   content: "...";
   display: inline-block;
   position: relative;
@@ -2355,10 +2359,11 @@ blockquote {
   letter-spacing: 20px;
 }
 @media (min-width: 48em) {
-  .hr:after {
+  hr:after {
     top: -50px;
   }
 }
+
 .hr--line {
   height: 1px;
   margin: 36px 0 24px 0;

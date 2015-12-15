@@ -18,6 +18,11 @@
     @include breakpoint("adult-bear") { padding-top: 140px; }
 }
 
+// Text alignment
+.-l-center {
+    text-align: center;
+}
+
 .-sr-only {
     position: absolute !important;
     height: 1px; width: 1px; 
