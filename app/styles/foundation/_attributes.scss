@@ -30,3 +30,28 @@
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
 }
+
+
+// -------------------------------------
+//   Dynamic content helpers (posts)
+// -------------------------------------
+
+// Wide screen image (to break out of container)
+.-img-wide {
+    
+    margin: 0 auto;
+    width: 100%;
+    
+    > img { 
+        width: 100%; 
+
+        @include breakpoint('mama-bear'){
+            width: 1080px;
+            margin: 0 -60px 0 -60px;
+        }
+        @include breakpoint('papa-bear'){
+            width: 1285px;
+            margin: 0 -164px 0 -164px;
+        }
+    }
+}

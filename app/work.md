@@ -52,13 +52,13 @@ I’ve been lucky to work on a wide range of projects in the last few years. Bel
 <article class="card card--stack card--v1">
 	<h2 class="card__title h4">DBD Media</h2>
 	<div class="card__meta">Web Project</div>
-	<a class="card__action" href="#">View website</a>
+	<a class="card__action" href="http://dbdmedia.co.uk">View website</a>
 </article>
 
 <article class="card card--stack card--v2">
 	<h2 class="card__title h4">Pentalver</h2>
 	<div class="card__meta">Web Project</div>
-	<a class="card__action" href="#">View website</a>
+	<a class="card__action" href="#">Being deployed (coming soon)</a>
 </article>
 
 <article class="card card--stack card--v3">

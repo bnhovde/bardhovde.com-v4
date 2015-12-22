@@ -2011,6 +2011,26 @@ ul ul, ol ol, ul ol, ol ul {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+.-img-wide {
+  margin: 0 auto;
+  width: 100%;
+}
+.-img-wide > img {
+  width: 100%;
+}
+@media (min-width: 68.75em) {
+  .-img-wide > img {
+    width: 1080px;
+    margin: 0 -60px 0 -60px;
+  }
+}
+@media (min-width: 81.25em) {
+  .-img-wide > img {
+    width: 1285px;
+    margin: 0 -164px 0 -164px;
+  }
+}
+
 .icon {
   display: inline-block;
   fill: currentColor;
