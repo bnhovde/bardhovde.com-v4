@@ -2572,6 +2572,9 @@ hr:after {
   list-style: initial;
   margin: 10px 0 0 40px;
 }
+.post__content ol li {
+  list-style-type: decimal;
+}
 
 .rotator[ui-active-item="2"] .rotator__item:nth-child(3) {
   -webkit-transform: translate3d(0, -35px, 0);
