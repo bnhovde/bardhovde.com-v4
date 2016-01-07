@@ -5,10 +5,10 @@ var ns = ns || {};
     'use strict';
 
     /**
-    * Rotator Animation Controller
+    * Menu Controller
     */
 
-    ns.animationCtrl = (function () {
+    ns.menuCtrl = (function () {
 
         // App config and variables
         var DOM = {
@@ -70,4 +70,4 @@ var ns = ns || {};
         return module;
     })();
 })(window, document);
-//# sourceMappingURL=rotatorCtrl.js.map
+//# sourceMappingURL=menuShrinker.js.map

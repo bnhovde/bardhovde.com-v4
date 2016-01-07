@@ -2,24 +2,13 @@ var ns = ns || {};
 
 (function (window, document, undefined) {
 
-				'use strict';
+    'use strict';
 
-				/**
-    * Global Constants
+    /**
+    * Fire off modules
     */
 
-				// Get todays date
-				var d = new Date();
-				var day = d.getDate();
-
-				// Temp setting
-				day = 1;
-
-				ns.CONST = {
-								today: day
-				};
-
-				// Fire off modules
-				ns.animationCtrl.init();
+    ns.animationCtrl.init();
+    // ns.headerCtrl.init();
 })(window, document);
 //# sourceMappingURL=main.js.map

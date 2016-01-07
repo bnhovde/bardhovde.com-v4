@@ -5,22 +5,11 @@ var ns = ns || {};
     'use strict';
 
     /**
-    * Global Constants
+    * Fire off modules
     */
-	
-	// Get todays date
-	let d = new Date();
-	let day = d.getDate();
-	
-	// Temp setting
-	day = 1;
-    
-    ns.CONST = {
-		today : day
-	};
-	
-	// Fire off modules
+
 	ns.animationCtrl.init();
+	// ns.headerCtrl.init();
 	
 })(window, document);
 

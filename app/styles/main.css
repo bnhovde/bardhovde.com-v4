@@ -2288,7 +2288,7 @@ blockquote {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   left: 0;
   width: 100%;
   background-color: white;
@@ -2354,6 +2354,9 @@ blockquote {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+.header[ui-header="is-scrolled"] .header__inner {
+  height: 80px !important;
 }
 
 hr {

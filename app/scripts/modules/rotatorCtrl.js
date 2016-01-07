@@ -1,5 +1,4 @@
 var ns = ns || {};
-var Velocity = Velocity || {};
 
 (function(window, document, undefined) {
 

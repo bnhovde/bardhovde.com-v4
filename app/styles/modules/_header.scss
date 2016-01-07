@@ -15,7 +15,7 @@
     //   Variables & Base
     // -------------------------------------
     
-    position: fixed;
+    position: absolute;
     left: 0;
     width: 100%;
     background-color: white;
@@ -97,6 +97,16 @@
                 opacity: 1;
                 transform: scale(1);
             }
+        }
+    }
+
+
+    // ----- Condensed version (after scroll) ----- // 
+
+    &[ui-header="is-scrolled"] {
+        
+        .header__inner { 
+            height: 80px!important;
         }
     }
 
