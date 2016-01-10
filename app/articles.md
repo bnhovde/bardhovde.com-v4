@@ -38,9 +38,9 @@ One challenge of this industry is the breakneck speed of change. Writing is an e
 	
 In addition, the below is a list of blogs and podcasts that I have built up over the years. Created by people a lot smarter than me these have helped me immensely.
 
-<hr class="hr" />
+<hr class="hr" id="resources"/>
 
-<section id="resources">
+<section>
 	<ul class="listing-block listing-block--alt1">
 		<li class="listing__title">
 			Podcasts. <span>Great for travelling.</span>
