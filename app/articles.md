@@ -14,21 +14,21 @@ I love writing, and along with some friends I write regular(ish) articles over a
 
 <section class="articles">
 	<article class="card card--stack card--v1">
+		<h2 class="card__title h4">How to decide what to learn next</h2>
+		<div class="card__copy">Or: Help! I am drowning in knowledge!</div>
+		<a class="card__action" href="https://medium.com/fed-or-dead/how-to-decide-what-to-learn-next-a47153c0d202#.e9xnmb3m4">Read Post</a>
+	</article>
+	
+	<article class="card card--stack card--v2">
 		<h2 class="card__title h4">Do you really need a CMS?</h2>
 		<div class="card__copy">Escaping the dynamic content pitfalls</div>
 		<a class="card__action" href="https://medium.com/fed-or-dead/do-you-really-need-a-cms-d702aaafb09#.a691ao5do">Read Post</a>
 	</article>
 	
-	<article class="card card--stack card--v2">
+	<article class="card card--stack card--v3">
 		<h2 class="card__title h4">From Sublime Text to VS Code</h2>
 		<div class="card__copy">Ready for a change of scenery?</div>
 		<a class="card__action" href="https://medium.com/fed-or-dead/sublime-text-to-vs-code-87fccca84268#.vbs2yid3r">Read Post</a>
-	</article>
-	
-	<article class="card card--stack card--v3">
-		<h2 class="card__title h4">Legacy Code: A tale of horror</h2>
-		<div class="card__copy">Part 1/2: What is it? Where did it come from and how to stop it from happening.</div>
-		<a class="card__action" href="https://medium.com/fed-or-dead/legacy-code-b433b4a63a88#.r6k1r4myd">Read Post</a>
 	</article>
 </section>
 
