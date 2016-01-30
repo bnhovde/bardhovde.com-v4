@@ -6,6 +6,8 @@ tags: "Development"
 icon: "mouse"
 variant: "v5"
 order: "5"
+sitemap:
+  exclude: 'yes'
 ---
 
 

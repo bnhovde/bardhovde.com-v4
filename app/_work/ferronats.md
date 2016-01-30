@@ -6,6 +6,8 @@ tags: "Creation & Presentation"
 icon: "microphone"
 variant: "v3"
 order: "3"
+sitemap:
+  exclude: 'yes'
 ---
 
 A month or so ago I was lucky enough to do my first "real" public talk at [Digital Hampshire](http://www.digitalhampshire.com/) along with my colleague, [Carl Cahill](https://medium.com/@carl_cahill).

@@ -3,6 +3,10 @@ layout: page
 title: Contact
 permalink: /contact/
 order: 4
+sitemap:
+  lastmod: 2016-01-28
+  priority: 0.7
+  changefreq: 'monthly'
 ---
 
 

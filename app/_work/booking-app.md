@@ -6,6 +6,8 @@ tags: "Planning, Development"
 icon: "suitcase"
 variant: "v1"
 order: "1"
+sitemap:
+  exclude: 'yes'
 ---
 
 > Psst! This article is still work in progress

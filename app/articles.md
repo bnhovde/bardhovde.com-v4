@@ -3,6 +3,10 @@ layout: page
 title: Articles
 permalink: /articles/
 order: 2
+sitemap:
+  lastmod: 2016-01-28
+  priority: 0.7
+  changefreq: 'monthly'
 ---
 
 

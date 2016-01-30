@@ -3,6 +3,10 @@ layout: page
 title: About Me
 permalink: /about/
 order: 3
+sitemap:
+  lastmod: 2016-01-28
+  priority: 0.7
+  changefreq: 'monthly'
 ---
 
 

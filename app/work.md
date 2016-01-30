@@ -3,6 +3,8 @@ layout: page
 title: Selected Works
 permalink: /my-work/
 order: 1
+sitemap:
+  exclude: 'yes'
 ---
 
 

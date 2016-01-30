@@ -6,6 +6,8 @@ tags: "Concept, Planning, Development"
 icon: "box"
 variant: "v4"
 order: "4"
+sitemap:
+  exclude: 'yes'
 ---
 
 [Fed-Up](https://www.npmjs.com/package/generator-cdd) (a.k.a generator-cdd) is a lightweight CSS/SCSS BEM-framework and yeoman generator for team collaboration.

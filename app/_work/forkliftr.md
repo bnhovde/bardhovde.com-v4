@@ -6,6 +6,8 @@ tags: "Development"
 icon: "gamepad"
 variant: "v1"
 order: "6"
+sitemap:
+  exclude: 'yes'
 ---
 
 Forkliftr is a forklift game controlled with three analogue joysticks.
