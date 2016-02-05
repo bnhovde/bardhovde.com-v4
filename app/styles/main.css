@@ -1830,7 +1830,6 @@ th {
   box-sizing: border-box;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  outline: none;
 }
 
 body {
@@ -2577,6 +2576,15 @@ hr:after {
 }
 .post__content ol li {
   list-style-type: decimal;
+}
+.post__content img {
+  max-width: 100%;
+}
+.post__content figcaption {
+  text-align: center;
+  font-size: 16px;
+  font-size: 1rem;
+  font-style: italic;
 }
 
 .rotator[ui-active-item="2"] .rotator__item:nth-child(3) {

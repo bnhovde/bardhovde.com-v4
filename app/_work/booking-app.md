@@ -12,31 +12,51 @@ sitemap:
 
 > Psst! This article is still work in progress
 
-The booking app is a single-page application currently in development at [@cddnation](http://cddnation.com).
+The booking app is a web application in development at [@cddnation](http://cddnation.com). It is due to go into production in the next few weeks.
 
-The app is the biggest SPA I've worked on, and I'm very excited about where we're at with it so far.
+Once live, it will serve as the booking platform for a chain of hotels in the UK, running in multiple separate instances on the hotel websites.
 
-Once in production, it will serve as the booking platform for 10+ hotels across the UK, running in 10+ separate instances on their individual websites.
+The booking application has been developed as a stand-alone website component, and will be deployed into the hotel websites separately. This means that new versions can be rolled out without affecting their environments, but it has also introduced challenges I'll briefly touch on later.
 
 ---
-{: .hr .hr--line}
 
-### Challenges
+## Features
 
-#### 3rd party API
+The application is running on Angularjs, uses UI-router for internal routing and a custom-built session manager to store input data. JWT's are used for authentication and Karma is the test runner.
 
-A requirement of the build is that all booking data needs to go through a third party provider that's well established in the UK.
+### Application structure
 
-This provided us with a few challenges as we're not fully in control of what data we can access, but thorough planning has helped.
+The application have been built using [best practices](https://github.com/johnpapa/angular-styleguide) and is fully tested. Every piece of UI has been split into components and the controllers are very lean, making the application easy to reason about and understand, not to mention test.
+
+<figure markdown="1">
+![Application structure](/images/work/booking-app-1.svg)
+<figcaption>General application structure</figcaption>
+</figure>
+
+### Accessibility
+
+This is something I've put a lot of work and time into. The application is fully usable with a keyboard and by screenreaders. This was achieved using semantic markup along with proper ARIA-roles for custom UI elements.
+
+
+---
+
+
+## Challenges
+
+### 3rd party API
+
+A requirement is that all booking & room data needs to go through a third party provider that's well established in the UK.
+
+This provided us with a few challenges as we're not fully in control of the structure of the data we can access, but thorough planning has helped us develop the application around this without limiting functionality.
 
 #### Style leaks
 
-Style leaks were a concern as we didn't want any styling to leak beetwen the booking app and the website it would be running within.
+Style leaks were a concern as we didn't want any styling to leak between the booking app and the website it would be running within.
 
-The way we got around this is using a namespace for all booking app styles. We already use BEM-notation for all modules, but to prevent any base styles, font sizing from leaking across the namespace was our savior. It's a shame web components isn't quite there yet as this could have prevented this worry via the shadow DOM.
+The way we got around this is using a namespace for all booking app styles. We already use BEM-notation for all modules, but to prevent any base styles, font sizing from leaking across the namespace was our savior. It's a shame web components isn't there yet as this could have prevented this worry via the shadow DOM.
 
 #### Testing
 
 For such an important part of the business, testing has been at the front of my mind throughout the build. I've found this quite challenging as there are a lot of modules and the app itself is very data-driven, but it's been hugely educational for me. 
 
-The knowledge that changing something won't break something else is very liberating, especially when the app goes into production.
+The knowledge that changing something won't break something else is very liberating, and will be crucial once the app goes into production.

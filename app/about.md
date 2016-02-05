@@ -22,6 +22,8 @@ Since then I've been lucky enough to work with some very skilled people across m
 
 <hr class="hr" />
 
+## Expertise
+
 My areas of interest and experience are always changing, but currently they are as follows:
 
 <ul class="listing">
@@ -36,7 +38,7 @@ My areas of interest and experience are always changing, but currently they are 
 	<li class="listing__title">JavaScript.</li>
 	<li class="listing__item">javaScript</li>
 	<li class="listing__item">Module patterns</li>
-	<li class="listing__item">ES6/ES2015</li> 
+	<li class="listing__item">ES6/ES2016</li> 
 	<li class="listing__item">Angularjs</li>
 </ul>
 

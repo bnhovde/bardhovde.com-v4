@@ -45,6 +45,16 @@
         ol li { 
             list-style-type: decimal;
         }
+        
+        // Images
+        img { max-width: 100%; }
+        
+        // Figcaptions
+        figcaption {
+            text-align: center;
+            font-size: 1rem;
+            font-style: italic;
+        }
     }
 
 

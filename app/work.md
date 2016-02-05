@@ -63,8 +63,24 @@ I’ve been lucky to work on a wide range of projects in the last few years. Bel
 	<a class="card__action" href="#">Being deployed (coming soon)</a>
 </article>
 
-<article class="card card--stack card--v3">
-	<h2 class="card__title h4">Ferry Dental</h2>
-	<div class="card__meta">Freelance Web Project</div>
-	<a class="card__action" href="http://ferrydental.co.uk/">View website</a>
-</article>
+---
+
+##Talks.
+
+Upcoming & past talks.
+
+<hr class="hr hr--line" />
+
+<section class="articles">
+	<article class="card card--stack card--v4">
+		<h2 class="card__title h4">ES6 in production</h2>
+		<div class="card__copy">Upcoming talk at <a href="http://www.meetup.com/DeveloperSouthCoast/" alt="Developer South Coast">Developer South Coast</a></div>
+		<a class="card__action" href="http://www.meetup.com/DeveloperSouthCoast/events/227278738/">View event</a>
+	</article>
+	
+	<article class="card card--stack card--v5">
+		<h2 class="card__title h4">PAST: Ferronats</h2>
+		<div class="card__copy">Browser performance primer at digital hampshire</div>
+		<a class="card__action" href="http://www.themediaflow.com/blog/digital-hampshire-the-highlights">Read summary</a>
+	</article>
+</section>
