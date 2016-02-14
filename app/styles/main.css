@@ -1892,6 +1892,10 @@ a:hover {
   opacity: .3;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1, .h1, h2, .h2 {
   letter-spacing: 2px;
 }
@@ -2016,6 +2020,7 @@ ul ul, ol ol, ul ol, ol ul {
 }
 .-img-wide > img {
   width: 100%;
+  max-width: none;
 }
 @media (min-width: 68.75em) {
   .-img-wide > img {
@@ -2576,9 +2581,6 @@ hr:after {
 }
 .post__content ol li {
   list-style-type: decimal;
-}
-.post__content img {
-  max-width: 100%;
 }
 .post__content figcaption {
   text-align: center;
