@@ -58,9 +58,15 @@ I’ve been lucky to work on a wide range of projects in the last few years. Bel
 </article>
 
 <article class="card card--stack card--v2">
-	<h2 class="card__title h4">Pentalver</h2>
-	<div class="card__meta">Web Project</div>
-	<a class="card__action" href="#">Being deployed (coming soon)</a>
+	<h2 class="card__title h4">TMD Beaulieu</h2>
+	<div class="card__meta">Interactive touch-screen Application</div>
+	<a class="card__action" href="https://www.youtube.com/watch?v=oU28FmPyJy8">See video</a>
+</article>
+
+<article class="card card--stack card--v3">
+	<h2 class="card__title h4">Bardhovde.com</h2>
+	<div class="card__meta">This website</div>
+	<a class="card__action" href="https://github.com/bnhovde/bardhovde.com-v4">View source code</a>
 </article>
 
 ---

@@ -26,6 +26,12 @@ An arduino Uno is used as the interface for the joysticks. This combined with no
 
 The game will be used for the Client's stand at several conventions across the world.
 
+Here is a slightly awkward video of how it works:
+
+<div class="embed embed--container">
+    <iframe src="https://player.vimeo.com/video/131522137" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
 ---
 
 ### Resources:

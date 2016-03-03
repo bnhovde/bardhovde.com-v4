@@ -2241,6 +2241,22 @@ blockquote {
           transform: rotate(-45deg);
 }
 
+.embed--container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed--container > iframe,
+.embed--container > object,
+.embed--container > embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .embed--tweet {
   margin: 0 auto;
   max-width: 500px;
@@ -2587,6 +2603,11 @@ hr:after {
   font-size: 16px;
   font-size: 1rem;
   font-style: italic;
+}
+.post__content iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .rotator[ui-active-item="2"] .rotator__item:nth-child(3) {

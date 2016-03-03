@@ -52,6 +52,13 @@
             font-size: 1rem;
             font-style: italic;
         }
+        
+        // Embeds
+        iframe {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
     }
 
 
