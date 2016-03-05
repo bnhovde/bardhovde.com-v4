@@ -20,21 +20,7 @@
     width: 100%;
     background-color: white;
     text-transform: uppercase;
-    z-index: 1;
-        
-    // Only show page after fonts have loaded
-    visibility: visible; 
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-    transition: all 1s cubic-bezier(0, 0, 0.24, 0.85);
-    transition-delay: .1s;
-    
-    // Body class added while webfonts load
-    .wf-loading & {
-        visibility: hidden; 
-        opacity: 0;
-        transform: translate3d(0, -20px, 0);
-    }
+
     
     // -------------------------------------
     //   Elements

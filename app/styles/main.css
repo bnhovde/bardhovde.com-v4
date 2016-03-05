@@ -2313,19 +2313,6 @@ blockquote {
   width: 100%;
   background-color: white;
   text-transform: uppercase;
-  z-index: 1;
-  visibility: visible;
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  transition: all 1s cubic-bezier(0, 0, 0.24, 0.85);
-  transition-delay: .1s;
-}
-.wf-loading .header {
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transform: translate3d(0, -20px, 0);
-          transform: translate3d(0, -20px, 0);
 }
 .header__inner {
   display: -webkit-flex;
@@ -2603,6 +2590,9 @@ hr:after {
   font-size: 16px;
   font-size: 1rem;
   font-style: italic;
+}
+.post__content figure {
+  margin: auto;
 }
 .post__content iframe {
   display: block;

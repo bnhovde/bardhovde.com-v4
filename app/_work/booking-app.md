@@ -12,9 +12,9 @@ sitemap:
 
 > Psst! This article is still work in progress
 
-The booking app is a web application in development at [@cddnation](http://cddnation.com). It is due to go into production in the next few weeks.
+The booking app is a web application in development at [@cddnation](http://cddnation.com). It is due to go into production in the next few weeks. Once this is live I'll add a link here.
 
-Once live, it will serve as the booking platform for a chain of hotels in the UK, running in multiple separate instances on the hotel websites.
+The app will serve as the booking platform for a chain of hotels in the UK, running in multiple separate instances on the hotel websites.
 
 The booking application has been developed as a stand-alone website component, and will be deployed into the hotel websites separately. This means that new versions can be rolled out without affecting their environments, but it has also introduced challenges I'll briefly touch on later.
 
@@ -30,6 +30,7 @@ The application have been built using [best practices](https://github.com/johnpa
 
 <figure markdown="1">
 ![Application structure](/images/work/booking-app-1.svg)
+{: .-img-wide}
 <figcaption>General application structure</figcaption>
 </figure>
 
