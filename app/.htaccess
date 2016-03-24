@@ -1,4 +1,9 @@
-#Set cache-control HTTP header for public with max time
+# HTTP TO HTTPS REDIRECT
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Set cache-control HTTP header for public with max time
 Header set Cache-Control "max-age=290304000, public"
 
 ## EXPIRES CACHING ##
@@ -16,5 +21,10 @@ ExpiresByType application/x-shockwave-flash "access 1 month"
 ExpiresByType image/x-icon "access 1 year"
 ExpiresByType image/ico "access 1 year"
 ExpiresDefault "access 1 month"
+
+<FilesMatch "serviceworker.js">
+  ExpiresDefault "now"
+</FilesMatch>
+
 </IfModule>
 ## EXPIRES CACHING ##

@@ -31,7 +31,6 @@
 
 <!-- build:js /scripts/main.js -->
 <script src="/scripts/compiled/modules/rotatorCtrl.js"></script>
-<!--<script src="/scripts/compiled/modules/headerCtrl.js"></script>-->
 <script src="/scripts/compiled/main.js"></script>
 <!-- endbuild -->
 
@@ -50,4 +49,14 @@
         wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
         s.parentNode.insertBefore(wf, s);
     })(document);
+</script>
+
+<!-- Service worker -->
+<script>
+    if ('serviceWorker' in navigator) {  
+        navigator.serviceWorker.register('/scripts/compiled/modules/serviceworker.js')  
+        // .then(initialiseState);  
+    } else {  
+        console.warn('Service workers aren\'t supported in this browser.');  
+    }  
 </script>
