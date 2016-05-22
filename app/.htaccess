@@ -1,7 +1,9 @@
 # HTTP TO HTTPS REDIRECT
-RewriteEngine On
-RewriteCond %{HTTP:X-Forwarded-SSL} !on
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP:X-Forwarded-SSL} !on
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
 
 # Set cache-control HTTP header for public with max time
 Header set Cache-Control "max-age=290304000, public"
@@ -28,3 +30,6 @@ ExpiresDefault "access 1 month"
 
 </IfModule>
 ## EXPIRES CACHING ##
+
+# Redirect for ES6 talk
+Redirect /es6 http://slides.com/bardhovde/es6-in-production-9/live?token=Yw5XoxJW
