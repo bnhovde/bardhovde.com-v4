@@ -1,7 +1,10 @@
 {
   "lang": "en",
   "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "name": "bardhovde.com",
+  "short_name": "bardhovde.com",
+  "start_url": "/index.html",
   "display": "standalone",
 	"icons": [
 		{

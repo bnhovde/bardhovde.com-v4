@@ -36,10 +36,10 @@ My areas of interest and experience are always changing, but currently they are 
 
 <ul class="listing">
 	<li class="listing__title">JavaScript.</li>
-	<li class="listing__item">javaScript</li>
+	<li class="listing__item">vanilla</li>
 	<li class="listing__item">Module patterns</li>
-	<li class="listing__item">ES6/ES2016</li> 
-	<li class="listing__item">Angularjs</li>
+	<li class="listing__item">ES6</li> 
+	<li class="listing__item">Angular & React</li>
 </ul>
 
 <ul class="listing">

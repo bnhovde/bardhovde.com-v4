@@ -1,17 +1,3 @@
-<footer class="footer container">
-    <nav class="nav">
-        {% assign sorted_pages = site.pages | sort:"order" %}
-        {% for node in sorted_pages %}
-          {% if node.title %}
-          <a class="nav__item" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
-          {% endif %}
-        {% endfor %}
-    </nav>
-</footer>
-
-<!--[if lt IE 9]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
 
 <!-- Google Analytics -->
 <script>
@@ -24,21 +10,8 @@
     ga('send', 'pageview');
 </script>
 
-<!-- build:js /scripts/vendor.js -->
-<!-- bower:js -->
-<!-- endbower -->
-<!-- endbuild -->
-
-<!-- build:js /scripts/main.js -->
-<script src="/scripts/compiled/modules/rotatorCtrl.js"></script>
-<script src="/scripts/compiled/main.js"></script>
-<!-- endbuild -->
-
-<!-- Typekit -->
+<!-- Webfonts -->
 <script>
-    
-    // Global namespace
-    var ns = ns || {};
     
     WebFontConfig = {
         google: { families: [ 'Raleway:300,600,100:latin' ] }
@@ -54,9 +27,6 @@
 <!-- Service worker -->
 <script>
     if ('serviceWorker' in navigator) {  
-        navigator.serviceWorker.register('/scripts/compiled/modules/serviceworker.js')  
-        // .then(initialiseState);  
-    } else {  
-        console.warn('Service workers aren\'t supported in this browser.');  
-    }  
+        navigator.serviceWorker.register('/service-worker.js');
+    } 
 </script>

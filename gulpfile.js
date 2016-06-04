@@ -22,7 +22,7 @@ gulp.task('injectScss', function() {
 });
 
 gulp.task('styles', ['injectScss'], function() {
-    return sass('app/styles/main.scss', { style: 'expanded' })
+    return sass('app/styles/main.scss', { style: 'compressed' })
         .pipe($.autoprefixer({
             browsers: ['last 2 versions']
         }))
@@ -36,168 +36,27 @@ gulp.task('pixrem', ['styles'], function() {
         .pipe(gulp.dest('app/styles'));
 });
 
-gulp.task('jshint', function() {
-    return gulp.src('app/scripts/**/*.js')
-        .pipe($.jshint())
-        .pipe($.jshint.reporter('jshint-stylish'))
-        .pipe($.jshint.reporter('fail'));
-});
-
-
-
-gulp.task('babel', function () {
-    return gulp.src(['app/scripts/**/*.js', '!app/scripts/compiled/**/*.js'])
-        .pipe($.sourcemaps.init())
-        .pipe($.babel({ 
-            blacklist: ['useStrict']
-        }))
-        .pipe($.sourcemaps.write('.'))
-        .pipe(gulp.dest('app/scripts/compiled/'));
-});
-
-
-
-
-gulp.task('html', ['pixrem'], function() {    
-
-
-    var assets = $.useref.assets({
-        searchPath: '{.tmp,app}'
-    });
-
-    
-    var filesToProcess = 'app/_includes/*.html';
-    
-
-    return gulp.src(filesToProcess)
-        .pipe(assets)
-        .pipe($.if('*.js', $.uglify()))
-        .pipe($.if('*.css', $.csso()))
-        .pipe(assets.restore())
-        .pipe($.useref())
-        .pipe($.if('*.html', $.minifyHtml({
-            conditionals: true,
-            loose: true
-        })))
-        .pipe(gulp.dest('dist'));
-});
-
-
-
-gulp.task('images', function() {
-    return gulp.src('app/images/**/*')
-        .pipe($.cache($.imagemin({
-            progressive: true,
-            interlaced: true
-        })))
-        .pipe(gulp.dest('dist/images'));
-});
-
-gulp.task('fonts', function() {
-    return gulp.src(require('main-bower-files')().concat('app/fonts/**/*'))
-        .pipe($.filter('**/*.{eot,svg,ttf,woff,woff2}'))
-        .pipe($.flatten())
-        .pipe(gulp.dest('dist/fonts'));
-});
-
-gulp.task('extras', function() {
-    return gulp.src([
-        'app/*.*',
-        '!app/*.html'
-    ], {
-        dot: true
-    }).pipe(gulp.dest('dist'));
-});
-
-gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
-
-gulp.task('connect', ['pixrem'], function() {
-    var serveStatic = require('serve-static');
-    var serveIndex = require('serve-index');
-    var client = require('connect')()
-        .use(require('connect-livereload')({
-            port: 35729
-        }))
-        .use(serveStatic('.tmp'))
-        .use(serveStatic('app'))
-        // paths to bower_components should be relative to the current file
-        // e.g. in client/index.html you should use ../bower_components
-        .use('/bower_components', serveStatic('bower_components'))
-        .use(serveIndex('app'));
-
-    require('http').createServer(client)
-        .listen(9000)
-        .on('listening', function() {
-            console.log('Started connect web server on http://localhost:9000');
-        });
-});
-
-gulp.task('serve', ['connect', 'watch'], function() {
-    require('opn')('http://localhost:9000');
-});
-
-// inject bower components
+// inject SASS components
 gulp.task('wiredep', function() {
     var wiredep = require('wiredep').stream;
 
     gulp.src('app/styles/*.scss')
         .pipe(wiredep())
         .pipe(gulp.dest('app/styles'));
-
-
-    gulp.src('app/*.html')
-        .pipe(wiredep())
-        .pipe(gulp.dest('app'));
-
 });
 
-// inject bower components without dev
-gulp.task('wiredepBuild', function() {
-    var wiredep = require('wiredep').stream;
+gulp.task('generate-service-worker', function(callback) {
+    var path = require('path');
+    var swPrecache = require('sw-precache');
+    var rootDir = 'app/_site';
 
-    gulp.src('app/styles/*.scss')
-        .pipe(wiredep())
-        .pipe(gulp.dest('app/styles'));
-
-
-    gulp.src('app/*.html')
-        .pipe(wiredep())
-        .pipe(gulp.dest('app'));
-
+    swPrecache.write('app/service-worker.js', {
+        staticFileGlobs: [rootDir + '/**/*.{html,css,svg}'],
+        stripPrefix: rootDir
+    }, callback);
 });
 
-
-gulp.task('watch', ['connect'], function() {
-    $.livereload.listen();
-
+gulp.task('watch', function() {
     // watch for changes
-    gulp.watch([
-        'app/*.html',
-        '.tmp/styles/**/*.css',
-        'app/scripts/**/*.js',
-        'app/images/**/*'
-    ]).on('change', $.livereload.changed);
-
     gulp.watch('app/styles/**/*.scss', ['pixrem']);
-     
-    gulp.watch(['app/scripts/**/*.js', '!app/scripts/compiled/**/*.js'], ['babel']);
-     
-    gulp.watch('bower.json', ['wiredep']);
-});
-
-
-
-
-gulp.task('build', ['wiredepBuild', 'jshint',  'babel',  'html', 'images', 'fonts', 'extras'], function() {
-    return gulp.src('dist/**/*').pipe($.size({
-        title: 'build',
-        gzip: true
-    }));
-});
-
-
-
-
-gulp.task('default', ['clean'], function() {
-    gulp.start('build');
 });
